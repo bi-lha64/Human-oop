@@ -20,6 +20,21 @@ public class Anna extends Human {
     public void setHeight(int height) {
         this.height = height;
     }
+
     @Override
-    public void eat(){super.eat();}
+    public void eat() {
+        super.eat();
+        int Annaweight=getWeight();
+        Annaweight=Annaweight+3;
+        setWeight(Annaweight);
+    }
+
+    @Override
+    public void birthday() {
+        int Annaage = getAge();
+        Annaage=Annaage+4;
+        setAge(Annaage);
+
+
+    }
 }

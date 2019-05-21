@@ -49,13 +49,14 @@ public class Human {
 
         Log.d("Human",speech);
     }
-   public int birthday(int age){
+   public void birthday(){
+        int age=getAge();
         age=age+1;
-        return age;
+        setAge(age);
      }
-     public int eat(int weight){
+    public int eat(int weight){
         weight=weight+2;
-         return Log.d("Human","I love food"+weight+"kgs");
+        return Log.d("Human","I love food"+weight+"kgs");
      }
 
 

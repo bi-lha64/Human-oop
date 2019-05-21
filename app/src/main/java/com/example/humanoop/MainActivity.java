@@ -34,14 +34,15 @@ public class MainActivity extends AppCompatActivity {
         bilha.sleep();
         bilha.sleep(8);
         bilha.speak("I love bongo music");
-        bilha.birthday(24);
+        bilha.birthday();
+        Log.d("bilha", "bilha birthday is" + bilha.getAge());
 
 
-
-    Anna girl = new Anna("viona", 10, 20, 3);
+    Anna girl = new Anna("Anna", 10, 20, 3);
     girl.eat();
-    girl.eat(10);
-    girl.birthday(34);
+    Log.d("Human","Anna new weight"+girl.getWeight());
+    girl.birthday();
+    Log.d("Human","Anna new age is"+girl.getAge());
 
     }
 
